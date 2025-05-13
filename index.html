@@ -315,41 +315,40 @@
       </section>
       
 
+      
       <section class="features-section">
         <!-- Header Section -->
-       <div class="features-content">
-        <div class="features-header">
-            <p>FEATURES</p>
-          <h2>What is in the <strong>package?</strong></h2>
-          <p>Engaging step challenges, expert support, and gamification to boost team health <br>and engagement.</p>
-        </div>
-      
-       
-        <div class="features-container">
-          <!-- Left: Feature Text -->
-          <div class="features-text">
-            <div class="feature-item">
-              <h3>Mobile application for employees</h3>
-              <p>Instingo’s apps for iOS and Android let employees <br>track step challenges, engage with gamification, <br>and get real-time updates easily.</p>
-            </div>
-      
-            <div class="feature-item">
-              <h3>Administration & dashboards</h3>
-              <p>HR teams can use a web-based dashboard to <br>oversee step challenges, track participation, and <br>access detailed reports for data-driven decisions.</p>
-            </div>
-      
-            <div class="feature-item">
-              <h3>Integrations with tracking tools</h3>
-              <p>Instingo syncs with various fitness trackers and <br>smartwatches like Apple Watch, Garmin, and Fitbit, <br>ensuring secure, real-time data.</p>
-            </div>
+        <div class="features-content">
+          <div class="features-header">
+            <p class="p">FEATURES</p>
+            <h2>What is in the <strong>package?</strong></h2>
+            <p>Engaging step challenges, expert support, and gamification to boost team health <br> and engagement.</p>
           </div>
       
-          <!-- Right: Image -->
-          <div class="features-image">
-            <img src="assets\Screenshot 2025-04-30 182940.png" alt="image" />
+          <!-- Content Section -->
+          <div class="features-container">
+            <!-- Left: Text -->
+            <div class="features-text">
+              <div class="feature-item" data-img="assets\Screenshot 2025-04-30 182940.png">
+                <h3>Mobile application for employees</h3>
+                <p>Instingo’s apps for iOS and Android let employees <br>track step challenges, engage with gamification, <br> and get real-time feedback.</p>
+              </div>
+              <div class="feature-item" data-img="assets\Screenshot 2025-05-13 112446.png">
+                <h3>Administration & dashboards</h3>
+                <p>HR teams can use a web-based dashboard to <br> oversee step challenges, track participation, and<br> access detailed reports.</p>
+              </div>
+              <div class="feature-item" data-img="assets\Screenshot 2025-04-30 182940.png">
+                <h3>Integrations with tracking tools</h3>
+                <p>Instingo syncs with various fitness trackers and <br> smartwatches like Apple Watch, Garmin, and Fitbit,<br> ensuring secure data tracking.</p>
+              </div>
+            </div>
+      
+            <!-- Right: Image -->
+            <div class="features-image">
+              <img id="feature-image" src="assets/Screenshot 2025-04-30 182940.png" alt="feature image" />
+            </div>
           </div>
         </div>
-       </div>
       </section>
 
 
@@ -645,5 +644,26 @@
           </div>
         </div>
       </footer>
+
+
+    <script>
+       const featureItems = document.querySelectorAll('.feature-item');
+const featureImage = document.getElementById('feature-image');
+
+featureItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const newImage = item.getAttribute('data-img');
+    
+    if (!featureImage.src.includes(newImage)) {
+      featureImage.style.opacity = 0.5;
+
+      setTimeout(() => {
+        featureImage.src = newImage;
+        featureImage.style.opacity = 1;
+      }, 200);
+    }
+  });
+});
+    </script>
 </body>
 </html>
