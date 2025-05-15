@@ -930,6 +930,14 @@ margin-top: 40px;
   background-color: white;
   padding: 70px;
   border-radius: 30px;
+  overflow: visible;
+  z-index: 1;
+}
+
+.features-header {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
 }
 
 .p {
@@ -972,6 +980,8 @@ line-height: 27.9px;
   align-items: flex-start;
   margin-top: 40px;
   gap: 40px;
+  overflow: visible;
+  position: relative;
 }
 
 .features-text {
@@ -1021,6 +1031,18 @@ font-size: 18px;
 font-style: normal;
 font-weight: 300;
 line-height: 27.9px; 
+}
+
+#feature-image {
+  width: 100%;
+  max-width: 500px; 
+  height: 450px;     
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  margin-bottom: 0px;
+  z-index: 10;
+  position: relative;
 }
 
 .features-image {
