@@ -329,7 +329,7 @@
           <div class="features-container">
             <!-- Left: Text -->
             <div class="features-text">
-              <div class="feature-item" data-img="assets\Screenshot 2025-04-30 182940.png">
+              <div class="feature-item active" data-img="assets\Screenshot 2025-04-30 182940.png">
                 <h3>Mobile application for employees</h3>
                 <p>Instingo’s apps for iOS and Android let employees <br>track step challenges, engage with gamification, <br> and get real-time feedback.</p>
               </div>
@@ -651,17 +651,20 @@
 const featureImage = document.getElementById('feature-image');
 
 featureItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    const newImage = item.getAttribute('data-img');
+  item.addEventListener('click', () => {
+    // Remove active class from all
+    featureItems.forEach(el => el.classList.remove('active'));
     
-    if (!featureImage.src.includes(newImage)) {
-      featureImage.style.opacity = 0.5;
+    // Add active class to the clicked item
+    item.classList.add('active');
 
-      setTimeout(() => {
-        featureImage.src = newImage;
-        featureImage.style.opacity = 1;
-      }, 200);
-    }
+    // Change the image smoothly
+    const newImg = item.getAttribute('data-img');
+    featureImage.style.opacity = 0;
+    setTimeout(() => {
+      featureImage.src = newImg;
+      featureImage.style.opacity = 1;
+    }, 200);
   });
 });
     </script>
