@@ -12,7 +12,7 @@
         <div class="navbar">
             <div class="logo">
                 <img src=" assets\path24 (1).png" height="45" width="100" alt="image">
-                <img src="assets\4202fb82db1c8a52312a56c17d194cabbb738b27.png " height="40" width="40" alt="image">
+               
             </div>
             <div class="nav-links">
                 <a href="#">Step Challenges</a>
@@ -26,6 +26,16 @@
                     <img src="assets\Flags.png" alt="image">
                     English &#9663;
                 </span>
+
+                <button class="jam-menu" aria-label="toggle-menu">
+                    <img src="assets/jam_menu.png" alt="menu-icon">
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <a href="#">Home</a>
+                  <a href="#">Home</a>
+                      <a href="#">Home</a>
+                          <a href="#">Home</a>
             </div>
         </div>
     
@@ -668,5 +678,16 @@ featureItems.forEach(item => {
   });
 });
     </script>
+
+
+<script>
+    const hamburger = document.querySelector('.jam-menu');
+const navLinks = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener('click', () => {
+   mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+});
+</script>
+
 </body>
 </html>
