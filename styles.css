@@ -375,7 +375,6 @@ padding: 10px 15px 10px 20px;
   
   .left-div {
     flex: 1;
-    min-width: 300px;
     gap: 20px;
   }
   
@@ -401,8 +400,9 @@ padding: 10px 15px 10px 20px;
     font-size: 56px;
     font-style: normal;
     font-weight: 300;
-    line-height: 61.6px; 
+    line-height: 60px; 
     letter-spacing: -1px;
+  
   }
   
   .left-div h2 strong {
@@ -420,13 +420,14 @@ padding: 10px 15px 10px 20px;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
+    max-width: 360px;
 
   }
   
   .aboutus-btn {
     display: flex;
     width: 120px;
-    height: 45px;
+    height: 40px;
     padding: 15px 15px 15px 15px;
     align-items: center;
     text-decoration: none;
@@ -437,7 +438,7 @@ padding: 10px 15px 10px 20px;
     font-family: "Public Sans";
     font-size: 16px;
     font-style: normal ;
-    margin-top: 20px;
+    margin-top: -10px;
     transition: all 0.3s ease;
   }
 
@@ -459,7 +460,7 @@ padding: 10px 15px 10px 20px;
   .solutions h4 {
     color: var(--text, #252628);
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: var(--Line-height-text-xl, 30px); 
@@ -468,10 +469,11 @@ padding: 10px 15px 10px 20px;
   .solutions p {
     color: var(--para-grey-text, #67656E);
     font-family: "Public Sans";
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 27.9px; 
+    line-height: 25px; 
+    max-width: 350px;
   }
 
 
@@ -482,13 +484,14 @@ padding: 10px 15px 10px 20px;
     background: linear-gradient(90deg, #EEF2FB 0%, #ECF2F2 50.5%, #EAF5F5 100%);
     padding: 80px 80px;
     font-family: 'Poppins', sans-serif;
-    height: 550px;
+    height: 570px;
     
 
   }
   
   .whychooseus-container {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
@@ -497,36 +500,37 @@ padding: 10px 15px 10px 20px;
   }
   
   .image img {
-    width: 600px;
-    height: 470px;
+    width: 390px;
+    height: 280px;
     border-radius: 30px;
+    margin-top: -60px;
   }
   
-  .choose-text {
-    flex: 1;
-    min-width: 300px;
-  }
   
   .choose-subheading {
     color: var(--para-grey-text, #67656E);
     font-family: "Public Sans";
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 300;
-    line-height: 20.3px; 
+    line-height: 20px; 
     letter-spacing: 2px;
     text-transform: uppercase;
   }
-  
+
+  .mobile-hide-br {
+    display: none;
+  }
   .choose-text h2 {
     color: var(--text, #252628);
     font-family: Poppins;
-    font-size: 56px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 61.6px; 
+    line-height: 30px; 
     letter-spacing: -1px;
     margin-top: 10px;
+    min-width: 370px;
   }
   
   .choose-text h2 strong {
@@ -536,10 +540,12 @@ padding: 10px 15px 10px 20px;
   .choose-description {
     color: var(--para-grey-text, #67656E);
     font-family: "Public Sans";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     margin-top: 15px;
+    align-items: center;
+    line-height: 20px;
   }
 
 
@@ -2217,8 +2223,139 @@ line-height: 22px;
 
 
 .why-choose-us {
-  height: 510px;
+  height: 520px;
   padding: 60px 20px 60px 20px;
+}
+
+/*CHALLENGES*/
+
+
+  .challenges {
+   height: auto;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #EEF2FB 0%, #ECF2F2 50.5%, #EAF5F5 100%);
+    padding: 50px 30px 30px 30px;
+    
+  }
+  
+  .challenges-container {
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 380px;
+    margin-top: 70px;
+  }
+
+  
+  .challenges-subheading {
+    color: var(--para-grey-text, #67656E);
+    font-family: "Public Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 30px;
+    
+  }
+  
+  .challenges-text h2 {
+    color: var(--text, #252628);
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 30px;
+    
+
+  }
+  
+  .challenges-text h2 strong {
+    font-weight: 700;
+    margin-left: 30px;
+  }
+  
+  .challenges-description {
+    color: var(--para-grey-text, #67656E);
+    font-family: "Public Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; 
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .challenges-button {
+    display: none;
+  }
+  
+
+.challenges-image {
+  flex-direction: column;
+ gap: 0;
+}
+
+  .challenges-img1 {
+  
+   width: 350px;
+   height: 420px;
+   max-width: 90%;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+ 
+  }
+
+
+.challenges-img2 {
+width: 350px;
+  height: 420px;
+  padding-right: 0px;
+  max-width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+ }
+
+
+/*BEGIN*/
+
+.begin {
+  display: none;
+}
+
+.StepChallenges {
+  display: none;
+}
+
+.how-it-works {
+  display: none;
+}
+
+.features-section {
+  display: none;
+}
+
+.clients {
+  display: none;
+}
+
+.requestnow {
+display: none;
+}
+.review {
+display: none;
+}
+
+.faq-section {
+display: none;
+}
+
+.footer {
+  display: none;
 }
 
 }
