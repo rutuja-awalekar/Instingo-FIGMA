@@ -1,317 +1,11 @@
-/*RESPONSIVE VERSION*/
 
-@media screen and (max-width: 770px) {
-  
-  .hero-section {
-    height: 600px;
-  }
-
-
-  .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    height: 100px;
-  }
-
-  .navbar .logo {
-    font-size: 13px;
-    font-weight: 300;
-    color: white;
-  }
-  
-.nav-links {
-
-  margin-left: -45px;
-  margin-top: -4px;
-}
-
-  .navbar .nav-links a {
-    margin: 0 7px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  
-  .navbar .actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .actions span{
-    color: white;
-    font-size: 14px;
-    margin-top: -4px;
-  }
-  
-  .get-started-button {
-    background-color: #91B72E;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
-    margin-top: -4px;
-  transition: all 0.7s ease;
-}
-
-
-.get-started-button:hover {
-background-color: #91B72E; 
-color: #000000;
-padding: 5px 12px 5px 10px;
-}
-  
-  
-  .text-box {
-    background-color: white;
-    padding: 20px 26px;
-    width: 400px;
-    border-radius: 15px;
-    margin-left: 40px;
-    margin-top: 180px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 2;
-    position: relative;
-    top: 50px; 
-    gap: 5px;
-    align-items: center;
-  }
-  
-  .text-box-content {
-    flex: 1 0 0;
-    gap: 10px;
-    align-items: flex-start;
-    flex-direction: column;
-    display: flex;
- }
-
-
-  .text-box-p {
-    color: var(--text, #252628);
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-   
-  }
-
-  .text-box p {
-    color: var(--para-grey-text, #67656E);
-    font-family: Poppins;;
-    font-size: 14px;
-    line-height: 18px;
-    font-style: normal;
-    font-weight: 300;
-   
-  }
-  
-  .text-box h1 {
-    color: var(--text, #252628);
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 300;
-    letter-spacing: -1px;
-    line-height: 25px;
-  }
-  
-  .text-box h1 strong {
-    color: var(--text, #252628);
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px;
-  
-  }
-
-
-  .button {
-    background-color: #327AAC;
-    color: white;
-    padding: 7px 17px 7px 16px;
-    border: none;
-    border-radius: 15px;
-    font-size: 10px;
-    cursor: pointer;
-    transition: all 0.7s ease;
-  }
-
-
-.button:hover {
-  background-color: #b6e1f4; 
-  color: #000000;
-  padding: 7px 20px 7px 16px;
-}
-
-.button-text {
-  display: inline-block;
-  transition: transform 0.5s ease;
-}
-
-.button:hover .button-text {
-  transform: translateX(10px);
-}
-
-
-/*WELLNESS SECTION*/
-
- .wellness {
-    background: linear-gradient(90deg, #EEF2FB 0%, #ECF2F2 50.5%, #EAF5F5 100%);
-    display: flex;
-    padding: 100px 90px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-    height: 450px;
-  }
-  
-  .wellness-content {
-    max-width: 900px;
-    margin: 0 auto;
-    gap: 30px;
-  }
-  
-  .balloon-icon {
-    width: 80px;
-    height: 80px;
-   margin-top: -20px;
-    align-items: center;
-    margin-left: 250px;
-   
-  }
-  
-  .wellness-label {
-    color: var(--para-grey-text, #67656E);
-    text-align: center;
-    font-family: "Public Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 20.3px; 
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  .wellness-heading {
-    color: var(--text, #252628);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px; 
-    letter-spacing: -1px;
-    margin-top: 18px;
-  }
-  
-  .wellness-heading strong {
-    color: var(--text, #252628);
-    font-family: Poppins;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: -1px;
-  }
-  
-  .wellness-subtext {
-    color: var(--para-grey-text, #67656E);
-    text-align: center;
-    font-family: "Public Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 20px; 
-    padding-top: 18px;
-  }
-
-
-/*PICTURE SECTION*/
-
-.picture-section {
-    background: linear-gradient(90deg, #EEF2FB 0%, #ECF2F2 50.5%, #EAF5F5 100%);
-    padding: 0px 90px 100px 90px;
-    font-family: 'Poppins', sans-serif;
-    height: 1200px;
-  }
-  
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .image-1 {
-    position: relative;
-  }
-  
-  .image-1 img,
-  .grid-image {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;
-  }
-  
-  .quote-box {
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-    right: 20px;
-    background-color: white;
-    padding: 30px 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  
-  .quote-box p {
-    color: var(--text, #252628);
-    font-family: "Public Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 27.9px; 
-  }
-  
-  .quote-box .author {
-    color: var(--para-grey-text, #67656E);
-    font-family: Literata;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27.9px; 
-    margin-top: 10px;
-  }
-
-  .right-images {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-
-}
 
 
 
 @media screen and (max-width: 430px) {
   
   .hero-section {
-    height: 800px;
+    height: auto;
     background-position: center right;
     background-size: 280%;
   }
@@ -497,7 +191,7 @@ color: white;
     justify-content: center;
     align-items: center;
   align-self: stretch;
-    height: 430px;
+    height: auto;
    
   }
   
@@ -562,7 +256,7 @@ align-self: stretch;
   /*PICTURE SECTION*/
 
   .picture-section {
-    height: 1000;
+    height: auto;
   padding: 0px 20px 60px 20px;
   }
 
@@ -577,13 +271,14 @@ align-self: stretch;
   /*HR SOLUTION*/
 
 .hr-solution {
-  height: 610px;
+  height: auto;
   padding: 0px 20px 60px 20px;
   display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 10px;
+max-width: 420px;
 }
 
 .hr-content {
@@ -592,6 +287,7 @@ flex-direction: column;
 align-items: flex-start;
 gap: 24px;
 align-self: stretch;
+max-width: 390PX;
 }
 
 .left-div {
@@ -645,10 +341,75 @@ line-height: 22px;
   }
 
 
-.why-choose-us {
-  height: 520px;
-  padding: 60px 20px 60px 20px;
-}
+/*WGYCHOOSE*/
+ .why-choose-us {
+    background: linear-gradient(90deg, #EEF2FB 0%, #ECF2F2 50.5%, #EAF5F5 100%);
+    padding: 40px 40px;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+ }
+
+.whychooseus-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-left: 0px;
+  }
+  
+  .image img {
+    width: 390px;
+    height: 280px;
+    border-radius: 30px;
+    margin-top: -60px;
+  }
+  
+  
+  .choose-subheading {
+    color: var(--para-grey-text, #67656E);
+    font-family: "Public Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .mobile-hide-br {
+    display: none;
+  }
+  .choose-text h2 {
+    color: var(--text, #252628);
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: -1px;
+    margin-top: 10px;
+    min-width: 370px;
+  }
+  
+  .choose-text h2 strong {
+    font-weight: 700;
+  }
+  
+  .choose-description {
+    color: var(--para-grey-text, #67656E);
+    font-family: "Public Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 15px;
+    align-items: center;
+    line-height: 20px;
+  }
+
+
 
 /*CHALLENGES*/
 
@@ -937,7 +698,7 @@ width: 350px;
 .StepChallenges-button-container {
   display: none;
 }
-}
+
 
 /*how-it-works*/
 
@@ -1613,4 +1374,6 @@ margin-top: 8px;
   font-style: normal;
   font-weight: 200;
 }
+}
+
 
